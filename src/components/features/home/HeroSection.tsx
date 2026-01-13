@@ -50,9 +50,9 @@ const HeroSection = () => {
             {/* Quick Stats */}
             <div className="flex flex-wrap gap-8 justify-center lg:justify-start mt-12 animate-fade-up delay-300">
               {[
-                { icon: Users, value: "50K+", label: "Lives Impacted" },
-                { icon: Globe, value: "25+", label: "Countries" },
-                { icon: Heart, value: "$2M+", label: "Raised" },
+                { icon: Users, value: "20K+", label: "Lives Impacted" },
+                { icon: Globe, value: "2", label: "Countries" },
+                { icon: Heart, value: "$200k+", label: "Raised" },
               ].map((stat, index) => (
                 <div key={index} className="flex items-center gap-3">
                   <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center">

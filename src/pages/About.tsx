@@ -130,94 +130,7 @@ const About = () => {
         </section>
 
         {/* Timeline */}
-        <section className="py-20 section-divider">
-          <div className="container">
-            <div className="text-center mb-12">
-              <span className="inline-block px-4 py-1.5 rounded-full bg-secondary/10 text-secondary text-sm font-medium mb-4">
-                Our Journey
-              </span>
-              <h2 className="font-display text-3xl md:text-4xl font-bold text-foreground mb-4">
-                A History of Impact
-              </h2>
-            </div>
-
-            <div className="max-w-3xl mx-auto">
-              <div className="relative">
-                {/* Vertical Line */}
-                <div className="absolute left-4 md:left-1/2 top-0 bottom-0 w-0.5 bg-border md:-translate-x-1/2" />
-
-                {timeline.map((item, index) => (
-                  <div 
-                    key={index}
-                    className={`relative flex items-center gap-6 mb-8 ${
-                      index % 2 === 0 ? 'md:flex-row' : 'md:flex-row-reverse'
-                    } animate-fade-up`}
-                    style={{ animationDelay: `${index * 100}ms` }}
-                  >
-                    {/* Dot */}
-                    <div className="absolute left-4 md:left-1/2 w-3 h-3 rounded-full bg-primary md:-translate-x-1/2 z-10" />
-                    
-                    {/* Content */}
-                    <div className={`flex-1 ml-12 md:ml-0 ${index % 2 === 0 ? 'md:pr-12 md:text-right' : 'md:pl-12'}`}>
-                      <div className="bg-card rounded-xl p-5 shadow-soft inline-block">
-                        <div className="flex items-center gap-2 mb-2">
-                          <Calendar className="w-4 h-4 text-primary" />
-                          <span className="text-primary font-semibold">{item.year}</span>
-                        </div>
-                        <h3 className="font-display text-lg font-semibold text-foreground mb-1">
-                          {item.title}
-                        </h3>
-                        <p className="text-muted-foreground text-sm">
-                          {item.description}
-                        </p>
-                      </div>
-                    </div>
-                    
-                    {/* Spacer for alternating layout */}
-                    <div className="hidden md:block flex-1" />
-                  </div>
-                ))}
-              </div>
-            </div>
-          </div>
-        </section>
-
-        {/* Team */}
-        <section className="py-20 bg-muted/50 section-divider">
-          <div className="container">
-            <div className="text-center mb-12">
-              <span className="inline-block px-4 py-1.5 rounded-full bg-primary/10 text-primary text-sm font-medium mb-4">
-                Our Team
-              </span>
-              <h2 className="font-display text-3xl md:text-4xl font-bold text-foreground mb-4">
-                Meet the People Behind WEMA
-              </h2>
-              <p className="text-muted-foreground max-w-2xl mx-auto">
-                Our dedicated team works tirelessly to ensure every donation creates maximum impact.
-              </p>
-            </div>
-
-            <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 max-w-5xl mx-auto">
-              {team.map((member, index) => (
-                <div 
-                  key={index}
-                  className="bg-card rounded-2xl p-6 text-center shadow-soft card-hover animate-fade-up"
-                  style={{ animationDelay: `${index * 100}ms` }}
-                >
-                  <div className="w-20 h-20 mx-auto rounded-full bg-gradient-to-br from-primary to-primary/70 flex items-center justify-center text-primary-foreground text-xl font-bold mb-4">
-                    {member.initials}
-                  </div>
-                  <h3 className="font-display text-lg font-semibold text-foreground mb-1">
-                    {member.name}
-                  </h3>
-                  <p className="text-muted-foreground text-sm">
-                    {member.role}
-                  </p>
-                </div>
-              ))}
-            </div>
-          </div>
-        </section>
+       
 
         {/* Impact Numbers */}
         <section className="py-20 bg-foreground section-divider">
@@ -230,9 +143,9 @@ const About = () => {
 
             <div className="grid grid-cols-2 lg:grid-cols-4 gap-6 max-w-4xl mx-auto">
               {[
-                { value: "25+", label: "Countries", icon: Globe },
-                { value: "50K+", label: "Families Served", icon: Users },
-                { value: "150+", label: "Active Projects", icon: Target },
+                { value: "2+", label: "Countries", icon: Globe },
+                { value: "10K+", label: "Families Served", icon: Users },
+                { value: "10+", label: "Active Projects", icon: Target },
                 { value: "500+", label: "Volunteers", icon: Heart },
               ].map((stat, index) => (
                 <div 

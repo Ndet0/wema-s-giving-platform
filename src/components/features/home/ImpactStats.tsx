@@ -4,7 +4,7 @@ import { Users, Home, Heart, Globe } from "lucide-react";
 const stats = [
   {
     icon: Heart,
-    value: 2500000,
+    value: 200000,
     suffix: "+",
     prefix: "$",
     label: "Total Donations Raised",
@@ -12,21 +12,21 @@ const stats = [
   },
   {
     icon: Users,
-    value: 50000,
+    value: 10000,
     suffix: "+",
     label: "Families Helped",
     color: "secondary",
   },
   {
     icon: Home,
-    value: 150,
+    value: 10,
     suffix: "+",
     label: "Active Projects",
     color: "primary",
   },
   {
     icon: Globe,
-    value: 25,
+    value: 2,
     suffix: "",
     label: "Countries Reached",
     color: "secondary",
