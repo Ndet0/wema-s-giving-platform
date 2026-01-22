@@ -1,0 +1,14 @@
+# Flask and Extensions
+Flask>=2.3.0
+Flask-SQLAlchemy>=3.0.0
+Flask-CORS>=4.0.0
+
+# Environment Variables
+python-dotenv>=1.0.0
+
+# Payment Processing
+stripe>=7.0.0
+
+# Database
+SQLAlchemy>=2.0.0
+
